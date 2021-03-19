@@ -1,13 +1,17 @@
 import React from 'react'
+import Image from './image'
+import H3 from './h3'
+import B from './b'
+import A from './a'
 
 function Card(props)
 {
   return(
     <div className="cls">
-      <img src={props.imgsrc} alt=""/>
-      <h3>{props.head1}</h3>
-      <b>{props.head2}</b>
-      <a href={props.head3}>Watch Now</a>
+      <Image imgsrc={props.imgsrc}/>
+      <H3 head1={props.head1}/>
+      <B head2={props.head2}/>
+      <A head3={props.head3}/>
     </div>
   )
 }
